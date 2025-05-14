@@ -20,7 +20,7 @@ for_window [class="^.*"] border pixel 1
 #### CUSTOM ####
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
-exec --no-startup-id feh --bg-scale ~/Pictures/<PICTUREFILE>
+exec --no-startup-id feh --bg-scale ~/Pictures/<PICTURE>
 
 exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 

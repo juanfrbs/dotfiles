@@ -67,6 +67,11 @@ alias brightup='sudo brightnessctl -d "intel_backlight" set 60%'
 alias performance='sudo powerprofilesctl set performance'
 alias balanced='sudo powerprofilesctl set balanced'
 
+# tmux
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
+
 eval "$(starship init zsh)"
 
 eval "$(/home/<USER>/.local/bin/mise activate zsh)"
